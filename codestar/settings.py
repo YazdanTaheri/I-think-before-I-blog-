@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['8000-yazdantaher-ithinkbefor-refex4zo0r2.ws.codeinstitute-ide.
 '.herokuapp.com']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -59,6 +60,8 @@ MIDDLEWARE = [
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 ROOT_URLCONF = 'codestar.urls'
 
